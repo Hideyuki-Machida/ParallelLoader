@@ -291,9 +291,9 @@ extension ParallelLoader {
 
 extension ParallelLoader {
 	public struct ProgressItem {
-		let bytesWritten: Int64
-		let totalBytesWritten: Int64
-		let totalBytesExpectedToWrite: Int64
+		public let bytesWritten: Int64
+		public let totalBytesWritten: Int64
+		public let totalBytesExpectedToWrite: Int64
 		init(bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
 			self.bytesWritten = bytesWritten
 			self.totalBytesWritten = totalBytesWritten
